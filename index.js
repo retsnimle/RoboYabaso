@@ -98,13 +98,13 @@ function parseInput(rplyToken, inputStr) {
           return isNaN(parseInt(obj));
         }                   
         //鴨霸獸指令開始於此
-        if (inputStr.match('鴨霸獸') != null && inputStr.match('說明') != null) return randomReply() + '\n' + '\
+        if (inputStr.match('e04') != null && inputStr.match('說明') != null) return randomReply() + '\n' + '\
 總之你要擲骰前就先打roll，後面接像是2d6，1d6+3，2d6+1d3之類的就好。  \
 \n要多筆輸出就是先空一格再打像是 *5 之類的。  \
 \n不要打成大寫D，不要逼我嗆你 \
 \n如果是CoC系的話，有初步支援cc擲骰了，獎懲骰也支援了。 \
 ';
-        if (inputStr.match('鴨霸獸') != null) return randomReply() ;
+        if (inputStr.match('e04') != null) return randomReply() ;
         
         //cc指令開始於此
         if (inputStr.split('=')[0] == 'cc<') 
